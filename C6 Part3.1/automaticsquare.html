@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <title>Square Animation</title>
+<head>
+  <style>
+    .container {
+     
+      
+      display: flex;
+      gap: 10px;
+      height: 100vh;
+    }
+    .container1{
+        width: 20%;
+        height: 20vh;
+        border: 2px solid black;
+    }
+
+    .box {
+        margin: 10px 10px;
+        width: 30px;
+        height: 20px;
+        border-radius: 5px;
+        animation: move1 3s infinite linear;
+      
+    }
+    .box1 {
+      background-color: #548dd4;
+      animation: move1 3s infinite linear;
+      border: 2px solid black;
+    }
+
+    .box2 {
+      background-color: #548dd4;
+      animation: move2 4s infinite ease-in-out;
+      border: 2px solid black;
+    }
+
+    .box3 {
+      background-color: #548dd4;
+      animation: move3 5s infinite linear;
+      border: 2px solid black;
+    }
+
+    .box4 {
+      background-color: #548dd4;
+      animation: move4 6s infinite ease-in-out;
+      border: 2px solid black;
+    }
+
+    
+
+    @keyframes move1 {
+        0% {
+        transform: translateX(0);
+      }
+    }
+
+    @keyframes move2 {
+        25% {
+        transform: translateX(100px);
+      }
+    }
+
+    @keyframes move3 {
+        25% {
+        transform: translateX(100px);
+      }
+      50% {
+        transform: translateX(100px) translateY(100px);
+      }
+      
+    }
+
+    @keyframes move4 {
+        25% {
+        transform: translateX(100px);
+      }
+      50% {
+        transform: translateX(100px) translateY(100px);
+      }
+        75% {
+        transform: translateX(0) translateY(100px);
+      }
+     
+      
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="container1">
+        <div class="box box1"></div>
+    </div>
+    
+    <div class="container1">
+        <div class="box box2"></div>
+    </div>
+
+    <div class="container1">
+        <div class="box box3"></div>
+    </div>
+
+    <div class="container1">
+        <div class="box box4"></div>
+    </div>
+
+   
+  </div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clip text</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Anton+SC&display=swap" rel="stylesheet">
+    <style>
+        body{
+            display: flex;
+            align-items: center;
+            height: 100vh;
+            justify-content: center;
+            background-color: black;
+            font-family: "Rowdies", sans-serif;
+            font-weight: 800;
+            font-style: normal;
+        }
+        .cliptext h1{
+            font-size: 8rem;
+            text-transform: uppercase;
+            background-image: url("parrot.jpg");
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="cliptext">
+        <h1>KARTHICK</h1>
+    </div>
+</body>
+</html>

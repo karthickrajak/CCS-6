@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Bar</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .menu{
+            display: flex;
+            
+            justify-content: space-evenly;
+            width: 100%;
+            height: 8vh;
+            background-color: black;
+            border-right: 2px solid white;
+            align-items: center;
+        }
+        a i{
+            visibility: hidden;
+        }
+        a{
+            display: inline-block;
+            text-decoration: none;
+            color: white;
+        }
+
+        @media screen and (max-width:800px) {
+            .menu {
+                height: 100vh;
+                display: block;
+                flex-direction: column;
+                background-image: linear-gradient(#BBBBBB,#294063);
+                color: #fff;
+                padding: 10px 0;
+        }
+        a i{
+            visibility: visible;
+            padding-right: 10px;
+        }
+        
+        .menu a {
+            display: block;
+          color: white;
+          background-color: ;
+          text-decoration: none;
+          padding: 30px 20px;
+          transition: background-color 0.3s ease;
+        }
+        
+        .menu a:hover {
+            background-color: white;
+            color: black;
+            
+        }
+        }
+ </style>
+</head>
+<body>
+    <div class="menu">
+        <a href="#"><i class="fa-solid fa-caret-left"></i>Home</a>
+        <a href="#"><i class="fa-solid fa-caret-left"></i>Products</a>
+        <a href="#"><i class="fa-solid fa-caret-left"></i>Sale</a>
+        <a href="#"><i class="fa-solid fa-caret-left"></i>About Us</a>
+        <a href="#"><i class="fa-solid fa-caret-left"></i>Services</a>
+        <a href="#"><i class="fa-solid fa-caret-left"></i>Contact us</a>
+      </div>
+</body>
+</html>

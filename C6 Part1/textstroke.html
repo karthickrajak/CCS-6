@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text stroke</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+</head>
+<body>
+    <style>
+        .text-stroke {
+          color: white;
+          -webkit-text-stroke: 1px #6aa2fb;
+          font-size: 6rem;
+          font-family: "Anton", sans-serif;
+          font-weight: 400;
+          font-style: normal;
+          text-align: center;
+          position: absolute;
+          top: 25%;
+          left: 50%;
+          transform: translateX(-50%) translateY(-50%);
+        }
+
+        .text-strokes{
+            color: #00ff15;
+            -webkit-text-stroke: 1px #fca0a9;
+            font-family: "Anton", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 6rem;
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-25%);
+        }
+        </style>
+        
+        <div class="text-stroke">Text Stroke</div>
+        <div class="text-strokes">Text Stroke</div>
+        
+</body>
+</html>
